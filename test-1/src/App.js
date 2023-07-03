@@ -1,24 +1,28 @@
+// App.js
+
 import React, { useState } from 'react';
 import Login from './Login';
 
 const App = () => {
   const [isLoggedIn, setLoggedIn] = useState(false);
+  const [role, setRole] = useState(null);
 
-  const handleLogin = (role) => {
+  const handleLogin = (newRole) => {
     setLoggedIn(true);
-    // 执行其他登录逻辑，根据角色进行相应处理...
-    console.log(`Logged in as ${role}`);
+    setRole(newRole);
+    console.log(`Logged in as ${newRole}`);
   };
 
   const handleLogout = () => {
     setLoggedIn(false);
+    setRole(null);
   };
 
   return (
     <div>
       {isLoggedIn ? (
         <div>
-          <p>You are logged in.</p>
+          <p>You are logged in as {role}.</p>
           <button onClick={handleLogout}>Logout</button>
         </div>
       ) : (
