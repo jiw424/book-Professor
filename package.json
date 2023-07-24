@@ -133,5 +133,9 @@
     "presets": [
       "react-app"
     ]
+  },
+  "engines": {
+    "node": "14.x"
   }
+
 }
