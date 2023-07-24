@@ -1,0 +1,42 @@
+.login-container {
+    text-align: center;
+    color: #108ee9;
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    height: 800px;
+}
+
+.login-container .content {
+    width: 400px;
+    height: 400px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.title {
+    margin-bottom: 60px;
+}
+
+
+.home-container {
+    text-align: center;
+    color: #108ee9;
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    padding-top: 40px;
+}
+
+.logout {
+    position: absolute;
+    right: 100px;
+    top: 20px;
+    z-index: 10000;
+}
